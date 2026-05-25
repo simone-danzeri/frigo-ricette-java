@@ -18,6 +18,9 @@ public class Grocery {
     @JoinColumn(name = "ingredient_id", nullable = false)
     private Ingredient ingredient;
 
+    @Column(nullable = false)
+    private Short quantity = 1;
+
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
