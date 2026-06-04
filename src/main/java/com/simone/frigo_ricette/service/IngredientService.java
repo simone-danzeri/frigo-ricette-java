@@ -13,7 +13,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class IngredientService {
     private final IngredientRepository ingredientRepository;
-    private final GroceryRepository groceryRepository;
 
     public List<Ingredient> findAll() {
         return ingredientRepository.findAll();
