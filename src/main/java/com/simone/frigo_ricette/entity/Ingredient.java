@@ -1,5 +1,6 @@
 package com.simone.frigo_ricette.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl;
@@ -21,6 +22,7 @@ public class Ingredient {
     private String slug;
 
     @Column(name = "is_available", nullable = false)
+    @JsonProperty("isAvailable")
     private boolean isAvailable = true;
 
     @Column(nullable = false)
